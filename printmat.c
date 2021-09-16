@@ -2,13 +2,14 @@
 
 //#DEFINE ROWS 2
 //#DEFINE COLS 2
+
 void printmat(int, int);
 
 int main(void){
-	int x[2][2] = { {0,0}, {0,0}}; //all elements of matrix are zero
+	int x[7][7] = { {0,0,77,88,99,145, 400}, {0,0,0,0,0,0,0}}; //all elements of matrix are zero
 	
-	for(int i = 0; i < 2; i++){
-		for(int j = 0; j < 2; j++){
+	for(int i = 0; i < 7; i++){
+		for(int j = 0; j < 7; j++){
 			printf("%d",x[i][j]); 
 		}
 	}
