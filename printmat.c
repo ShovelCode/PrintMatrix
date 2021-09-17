@@ -1,21 +1,23 @@
 #include <stdio.h>
 
-//#DEFINE ROWS 2
+//#DEFINE ROWS 2 //Why aren't these working?
 //#DEFINE COLS 2
 
 void printmat(int, int);
 
 int main(void){
+	int rows = 7;
+	int cols = 7;
 	int x[7][7] = { {0,0,77,88,99,145, 400}, {0,0,0,0,0,0,0}}; //all elements of matrix are zero
 	
 	for(int i = 0; i < 7; i++){
 		for(int j = 0; j < 7; j++){
-			printf("%d",x[i][j]); 
+			printf("%d\n ",x[i][j]); 
 		}
 	}
 
-	printf("%s", "\n\n\n");
-	printmat(7, 7);	
+	//printf("%s", "\n\n\n");
+	//printmat(7, 7);	
 }
 
 void printmat(int rows, int cols){
