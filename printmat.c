@@ -1,9 +1,6 @@
 #include <stdio.h>
 
-//#DEFINE ROWS 2 //Why aren't these working?
-//#DEFINE COLS 2
-
-void printmat(int, int);
+void printmat(int[], int, int);
 
 int main(void){
 	int rows = 7;
@@ -16,23 +13,22 @@ int main(void){
 		}
 	}
 
-	printf("%d", x[6][6]);
+	printmat(x,rows,cols);
 	
 }
 
-void printmat(int rows, int cols){
+void printmat(int* arr, int rows, int cols){
 
-	int y[rows][cols];
 
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
-			y[i][j] = 9;
+			arr[i][j] = 9;
 		}
 	}
 
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
-			printf("%d", y[i][j]);
+			printf("%d", arr[i][j]);
 		}
 		printf("%s", "\n");
 	}
