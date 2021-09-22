@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void printmat(int[], int, int);
+void printmat(int**, int, int);
 
 int main(void){
 	int rows = 7;
 	int cols = 7;
-	int x[7][7] = { {0,0,77,88,99,145, 400}, {0,0,0,0,0,0,0}};
+	int x[rows][cols];
 	
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
@@ -17,14 +17,7 @@ int main(void){
 	
 }
 
-void printmat(int* arr, int rows, int cols){
-
-
-	for(int i = 0; i < rows; i++){
-		for(int j = 0; j < cols; j++){
-			arr[i][j] = 9;
-		}
-	}
+void printmat(int** arr, int rows, int cols){
 
 	for(int i = 0; i < rows; i++){
 		for(int j = 0; j < cols; j++){
